@@ -1,0 +1,16 @@
+profilo/
+├── assets/
+├── css/
+│   └── styles.css
+├── js/
+│   ├── main.js
+│   └── dark-mode.js
+├── pages/
+│   ├── about.html
+│   ├── projects.html
+│   ├── skills.html
+│   ├── blog.html
+│   ├── contact.html
+│   └── resume.html
+├── index.html
+└── resume.pdf (Your downloadable resume)
