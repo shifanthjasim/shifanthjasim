@@ -1,0 +1,59 @@
+body {
+    font-family: 'Bodoni', serif;
+    background-image: url('./img/jas267501.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: rgba(209, 2, 2, 0.8); 
+    padding: 20px;
+    border-radius: 0; 
+}
+
+#about {
+    background-color: rgba(255, 247, 205, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.big-letter {
+    font-family: 'Bodoni', serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.blog-header {
+    font-family: 'Bodoni', serif;
+    background-color: #fff7c8; 
+}
+
+.bgmain{
+    opacity: 0.9 !important;
+    
+}
+
+.big-button {
+    font-size: 1.5rem; /* Make the button text larger */
+    padding: 15px 30px; /* Increase button size */
+    border-radius: 25px; /* Rounded corners */
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* Gradient background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+.big-button:hover {
+    background: linear-gradient(45deg, #0056b3, #008ccf); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Move up on hover */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6); /* Darker shadow on hover */
+}
+.big-button:active {
+    transform: translateY(1px); /* Slightly move down on click */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); /* Reset shadow */
+}
