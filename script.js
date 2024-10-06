@@ -32,3 +32,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Get all images in the gallery
+const images = document.querySelectorAll('.gallery img');
+
+// Function to check the position of the images
+function checkScroll() {
+    images.forEach((img) => {
+        const rect = img.getBoundingClientRect();
+        const isInViewport = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+
+        if (isInViewport) {
+            img.classList.add('zoom'); // Add zoom class when in viewport
+        } else {
+            img.classList.remove('zoom'); // Remove zoom class when out of viewport
+        }
+    });
+}
+
+// Listen to the scroll event
+window.addEventListener('scroll', checkScroll);
