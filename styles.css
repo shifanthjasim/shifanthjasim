@@ -33,11 +33,10 @@ body {
     text-align: center;
 }
 .blog-img {
-    width: 240px;   /* Adjust size of the image */
+    width: 100%;
     height: auto;
-    float: left;    /* Float to the left of the content */
-    margin-right: 15px;  /* Space between image and text */
-    border-radius: 10px; /* Optional: Rounded corners */
+    border-radius: 15px;
+    border: 10px solid #333333; /* Adds a 2px solid border */
 }
 
 .blog-header {
@@ -57,9 +56,9 @@ body {
 }
 
 .post {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    margin-bottom: 20px;
 }
 
 .post h2 {
@@ -170,43 +169,33 @@ body {
 }
 
 
-
-.gallery img {
-    width: 220px;  
-    height: 220px; 
-    border-radius: 10px; /* Adjust as needed for rounded corners */
-    border: 3px solid black; /* Set a solid black border */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
 .gallery-container {
     display: grid; /* Use grid for the gallery */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center; /* Center items within grid */
+    grid-template-columns: repeat(2, 1fr); /* Show 3 images in a row on big screens */
+    justify-items: stretch; /* Stretch items to fill the container */
+    align-items: stretch; /* Stretch items vertically within grid cells */
+    gap: 0; /* No gap between images */
+    padding: 0; /* No padding around the gallery */
+    margin: 0; /* No margin around the gallery */
 }
 
 .gallery img {
-    width: 220px;  
-    height: 220px; 
-    border-radius: 41px;
-    border-color: black;
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100%; /* Ensure images take the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* No border radius */
+    border: none; /* No border */
 }
 
-
-
-
-/* Responsive Styles */
+/* Responsive Styles for mobile */
 @media (max-width: 600px) {
     .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); /* Responsive grid for mobile */
+        grid-template-columns: repeat(2, 1fr); /* Show 2 images per row on mobile */
     }
     .gallery img {
-        width: 205px;  
-        height: 205px; 
+        height: auto; /* Maintain aspect ratio */
     }
 }
+
 
 .about {
     padding: 20px;
