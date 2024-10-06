@@ -212,15 +212,29 @@ body {
 /* Responsive Styles for mobile */
 @media (max-width: 600px) {
     .gallery-container {
-        grid-template-columns: repeat(2, 1fr); /* Show 2 images per row on mobile */
+        display: flex;  /* Use flexbox for centering */
+        flex-direction: column;  /* Stack images vertically */
+        align-items: center;  /* Horizontally center the images */
+        grid-template-columns: repeat(1, 1fr); /* Show 1 image per row on mobile */
     }
+    
     .gallery img {
-        width: 140%; /* Ensure images take the full width of their container */
+        width: 100%; /* Ensure images take the full width of their container */
         height: auto; /* Maintain aspect ratio */
-        max-height: 300px; /* Set a maximum height to prevent images from being too tall */
+        max-height: 400px; /* Set a maximum height to prevent images from being too tall */
         object-fit: cover; /* Ensure the images cover the area without distortion */
     }
+
+    /* Optionally hide some images as before */
+    .gallery-container figure:nth-of-type(5),
+    .gallery-container figure:nth-of-type(6),
+    .gallery-container figure:nth-of-type(7),
+    .gallery-container figure:nth-of-type(8) {
+        display: none;
+    }
 }
+
+
 
 
 .about {
