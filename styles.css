@@ -33,10 +33,12 @@ body {
     text-align: center;
 }
 .blog-img {
-    width: 100%;
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Set a maximum width for images */
     height: auto;
     border-radius: 15px;
     border: 10px solid #333333; /* Adds a 2px solid border */
+    margin: 0 auto; /* Center the image */
 }
 
 .blog-header {
@@ -53,12 +55,16 @@ body {
 
 .blog-posts {
     padding: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack posts vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .post {
     display: flex;
-    flex-direction: column; /* Stack items vertically by default */
+    flex-direction: column; /* Stack items vertically */
     margin-bottom: 20px;
+    text-align: center; /* Center text for better alignment */
 }
 
 .post h2 {
