@@ -48,12 +48,22 @@ section {
     text-transform: uppercase; /* Uppercase text */
     letter-spacing: 1px; /* Spacing between letters */
 }
+
 .big-button:hover {
     background: linear-gradient(45deg, #0056b3, #008ccf); /* Darker gradient on hover */
     transform: translateY(-3px); /* Move up on hover */
     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6); /* Darker shadow on hover */
 }
+
 .big-button:active {
     transform: translateY(1px); /* Slightly move down on click */
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); /* Reset shadow */
 }
+
+.watermark {
+    font-size: 0.8rem; /* Small, but still readable */
+    opacity: 0.7;      /* Slight transparency */
+    background-color: rgba(0, 0, 0, 0.4); /* Optional background for better readability */
+    padding: 2px 5px;  /* Some padding to space out the text */
+    border-radius: 3px; /* Rounded corners */
+  }
