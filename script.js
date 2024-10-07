@@ -14,6 +14,7 @@ document.getElementById('searchInput').addEventListener('input', function () {
     }
 
     let resultsFound = false;
+    const displayedTitles = new Set(); // Track displayed titles to avoid duplicates
 
     // Loop through all blog posts
     posts.forEach(function (post) {
@@ -21,10 +22,11 @@ document.getElementById('searchInput').addEventListener('input', function () {
         const description = post.querySelector('p').textContent.toLowerCase();
 
         // Check if the query is in the title or description
-        if (title.includes(query) || description.includes(query)) {
+        if ((title.includes(query) || description.includes(query)) && !displayedTitles.has(title)) {
             // Clone the post and append it to the results container
             const clone = post.cloneNode(true);
             resultsContainer.appendChild(clone);
+            displayedTitles.add(title); // Add the title to the set to prevent duplicates
             resultsFound = true;
         }
     });
