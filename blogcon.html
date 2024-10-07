@@ -42,8 +42,18 @@
     <!-- Header Section -->
     <header class="text-center py-5 bg-light">
         <h1 class="text-dark"><i>Welcome to My Blog</i></h1>
+            <!-- Shorter search bar placed below the heading -->
+    <div class="container d-flex justify-content-center my-4">
+        <input id="searchInput" class="form-control w-25" type="text" placeholder="Search blog posts..." aria-label="Search">
+    </div>
     </header>
-
+     <!-- Search Results section (hidden by default) -->
+      <section id="searchResults" justify-content-center">
+        <div class="container">
+            <h4 class="text-light mb-3">Search Results:</h4>
+            <div id="resultsContainer" class="row justify-content-center"></div>
+        </div>
+    </section>
     <!-- Blog Posts Section -->
     <section class="blog-posts py-5 bg-opacity-75">
         <div class="container">
