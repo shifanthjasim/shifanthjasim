@@ -34,10 +34,10 @@ Sections
 1. Home
 The landing page introduces me as "Your Friendly Neighborhood Software Engineer," with links to my most recent projects and blog posts.
 
-2. About
+2. About <br>
 A brief introduction about myself, my background in software development, and my approach to problem-solving.
 
-3. Portfolio
+3. Portfolio <br>
 A detailed overview of my projects, including:
 
 EmotionRain: A real-time emotion tracking app
