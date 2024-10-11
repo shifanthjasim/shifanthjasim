@@ -16,12 +16,14 @@ Here are some ideas to get you started:
 -->
 
 Shifanth Jasim Personal Website
-Website URL: shifanthjasim.com
+Website URL:https://www.shifanthjasim.com
 
 Overview
+
 Welcome to my personal website! This site serves as a portfolio for showcasing my web development projects, blog posts, and more. It includes various sections such as About, Projects, Skills, Services, Blog, and Testimonials.
 
 Key Features
+
 Responsive Design: The website adapts to different screen sizes using Bootstrap for a seamless user experience on all devices.
 Blog Section: Includes posts on programming languages, coding tips, and personal stories.
 Project Portfolio: A showcase of my web development work, including links to live demos and code repositories.
